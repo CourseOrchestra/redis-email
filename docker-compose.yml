@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+  worker:
+    image: email-worker
+    volumes:
+      - .:/src
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379/
+    command: ["-c", "config", "--results-ttl", "-1"]
+    links:
+      - redis
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  dashboard:
+    image: eoranged/rq-dashboard
+    ports:
+      - "9181:9181"
+    links:
+      - redis
+    environment:
+      RQ_DASHBOARD_REDIS_URL: redis://redis:6379/
