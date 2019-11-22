@@ -4,11 +4,19 @@ on: [push]
 
 jobs:
   build:
-
+    env:
+      PIPENV_VENV_IN_PROJECT: true
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
+      
+    - name: Cache packages
+      uses: actions/cache@v1
+      with:
+        path: .venv
+        key: ${{ runner.os }}-venv
+      
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
