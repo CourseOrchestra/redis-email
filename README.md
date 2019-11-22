@@ -1,5 +1,5 @@
 # Redis email
-![https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg](https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg)
+![https://github.com/CourseOrchestra/redis-email/actions?query=workflow%3A%22Python+application%22](https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg)
 
 Common email-worker
 
