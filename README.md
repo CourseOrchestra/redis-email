@@ -1,5 +1,6 @@
-![](https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg)
-# redis-email
+# Redis email
+![https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg](https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg)
+
 Common email-worker
 
 Example
