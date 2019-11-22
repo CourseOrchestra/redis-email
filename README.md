@@ -1,3 +1,4 @@
+![](https://github.com/CourseOrchestra/redis-email/workflows/Python%20application/badge.svg)
 # redis-email
 Common email-worker
 
